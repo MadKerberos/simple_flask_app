@@ -1,0 +1,8 @@
+version: '3.7'
+
+services:
+
+  server:
+    image: "docker.pkg.github.com/madkerberos/simple_flask_app/simple_flask_app:0.0.1"
+    ports:
+      - 5000:5000
