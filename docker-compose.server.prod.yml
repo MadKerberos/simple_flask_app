@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+
+  server:
+    container_name: simple_vue_app_server_prod
+    build:
+      context: .
+      dockerfile: ./docker/prod/Dockerfile
+    ports:
+      - 5000:5000
+    # volumes
+    #env_file:
+    #  - ./env/dev/.env
